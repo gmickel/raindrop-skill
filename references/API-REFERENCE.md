@@ -117,6 +117,9 @@ Merge collections.
 {"to": 123, "ids": [456, 789]}
 ```
 
+#### PUT /collections/clean
+Remove all empty collections.
+
 ### Sharing
 
 #### POST /collection/{id}/sharing
