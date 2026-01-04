@@ -70,6 +70,22 @@ curl -s "https://api.raindrop.io/rest/v1/user" \
   -H "Authorization: Bearer $RAINDROP_TOKEN" | jq .fullName
 ```
 
+### Why Test Tokens?
+
+We use Raindrop's test token + environment variable approach because:
+
+- **Standard pattern** — Same as `GH_TOKEN`, `ANTHROPIC_API_KEY`, etc.
+- **No expiration** — Test tokens are permanent (OAuth tokens expire in 2 weeks)
+- **No OAuth dance** — No redirect URI, no token refresh logic
+- **Subprocess-friendly** — Env vars are inherited by agents and scripts
+
+For personal/CLI use, this is the accepted approach. Store in `.zshrc.local` (not committed to dotfiles) and you're set.
+
+> **Want more security?** Use 1Password CLI or macOS Keychain:
+> ```bash
+> export RAINDROP_TOKEN=$(op read "op://Private/Raindrop/token")
+> ```
+
 ---
 
 ## Installation
