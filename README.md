@@ -26,10 +26,10 @@ echo 'export RAINDROP_TOKEN="your_token"' >> ~/.zshrc.local
 source ~/.zshrc
 
 # 3. Install (Claude Code / Amp / OpenCode)
-git clone https://github.com/USER/raindrop-skill ~/.claude/skills/raindrop
+git clone https://github.com/gmickel/raindrop-skill ~/.claude/skills/raindrop
 
 # 3. Install (Codex)
-git clone https://github.com/USER/raindrop-skill ~/.codex/skills/raindrop
+git clone https://github.com/gmickel/raindrop-skill ~/.codex/skills/raindrop
 
 # 4. Use it
 "Save this article to my Reading collection"
@@ -78,20 +78,20 @@ curl -s "https://api.raindrop.io/rest/v1/user" \
 
 ```bash
 # User-level (all projects)
-git clone https://github.com/USER/raindrop-skill ~/.claude/skills/raindrop
+git clone https://github.com/gmickel/raindrop-skill ~/.claude/skills/raindrop
 
 # Project-level (single repo)
-git clone https://github.com/USER/raindrop-skill .claude/skills/raindrop
+git clone https://github.com/gmickel/raindrop-skill .claude/skills/raindrop
 ```
 
 ### Codex CLI
 
 ```bash
 # User-level
-git clone https://github.com/USER/raindrop-skill ~/.codex/skills/raindrop
+git clone https://github.com/gmickel/raindrop-skill ~/.codex/skills/raindrop
 
 # Project-level
-git clone https://github.com/USER/raindrop-skill .codex/skills/raindrop
+git clone https://github.com/gmickel/raindrop-skill .codex/skills/raindrop
 ```
 
 ### Amp / OpenCode
@@ -99,7 +99,7 @@ git clone https://github.com/USER/raindrop-skill .codex/skills/raindrop
 Both fall back to `.claude/skills/`:
 
 ```bash
-git clone https://github.com/USER/raindrop-skill ~/.claude/skills/raindrop
+git clone https://github.com/gmickel/raindrop-skill ~/.claude/skills/raindrop
 ```
 
 See [docs/](docs/) for detailed installation guides.
